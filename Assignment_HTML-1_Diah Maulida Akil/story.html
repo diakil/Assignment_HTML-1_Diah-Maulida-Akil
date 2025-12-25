@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story – Bean & Brew</title>
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#B87C4C",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["'Be Vietnam Pro'", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg":  
+                        "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+        
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#1b140d] dark:text-[#f3ede7] 
+font-display min-h-screen flex flex-col overflow-x-hidden">
+
+    <!-- Top Navigation -->
+        <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7dbcf] bg-background-light/90 dark:bg-background-dark/90 px-4 py-3 backdrop-blur-md md:px-10">
+                <div class="flex items-center gap-4 text-primary">
+                    <div class="size-8">
+                        <span class="material-symbols-outlined text-[32px]">coffee</span>
+                    </div>
+                        <h2 class="text-[#1b140d] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Bean &amp; Brew</h2>
+                    </div>
+                    <div class="flex flex-1 justify-end gap-8">
+                    <nav class="hidden items-center gap-9 md:flex">
+                            <a class="text-[#1b140d] dark:text-[#f3ede7] text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+                            <a class="text-[#1b140d] dark:text-[#f3ede7] text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Shop</a>
+                            <a class="text-[#1b140d] dark:text-[#f3ede7] text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Learn</a>
+                            <a class="text-primary text-sm font-bold leading-normal" href="#">About Us</a>
+                            <a class="text-[#1b140d] dark:text-[#f3ede7] text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+                    </nav>
+                    <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 py-2 text-[#fcfaf8] text-sm font-bold leading-normal tracking-[0.015em] transition-transform hover:scale-105">
+                        <span class="truncate">Order Online</span>
+                    </button>
+                    </div>
+        </header>
+        <main class="flex flex-col items-center">
+    <!-- Hero Section -->
+            <section class="w-full max-w-[1200px] px-4 py-8 md:px-10">
+                <div class="relative overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat min-h-[500px] flex flex-col justify-center items-center text-center p-8 gap-6 shadow-sm" data-alt="Close up of a barista pouring latte art into a ceramic cup in a warm cozy cafe" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBlL6x96ujjMdDyLMKgvK-FIfLONul9WkxSSw4sku8NnoDuixZctFnJMxLSccCHKzK_DEjbd48ajXUR_3wt3nmTnDd6cluS29d1po3EgOysDBXoAM2e9SNZ567HfdAt8xPucrFkwjA91Vc_j-JfBUSy4nmBHHBT4Iz3TMxnSoUcp6SFVw0ID3_8gI-Ab5vsKlZIUgJXR4pVunrZASBAU-bL1wga6M9TLJlUWPId9kppf61uwpxiSy8w_NNXD-ZqUZbitdpo03JeOQ");'>
+                <div class="flex flex-col gap-4 max-w-[700px]">
+                        <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-6xl drop-shadow-lg">
+                            More Than Just a Cup
+                        </h1>
+                        <h2 class="text-white/90 text-lg font-medium leading-relaxed md:text-xl drop-shadow-md">
+                            Welcome to a coffee shop built for the curious. Whether you're a beginner or a pro, we're here to help you find your perfect brew without the pretense.
+                        </h2>
+                </div>
+                </div>
+            </section>
+    <!-- Origin Story Section -->
+            <section class="w-full max-w-[960px] px-4 py-16 md:px-10">
+                <div class="flex flex-col gap-16">
+                <div class="flex flex-col gap-6 text-center md:text-left">
+                        <h2 class="text-primary text-sm font-bold uppercase tracking-wider">Our Story</h2>
+                        <h3 class="text-[#1b140d] dark:text-white text-3xl font-bold leading-tight md:text-4xl md:leading-tight tracking-[-0.033em]">
+                            From Garage Roaster to Neighborhood Spot
+                        </h3>
+                        <p class="text-[#1b140d]/80 dark:text-[#f3ede7]/80 text-lg leading-relaxed max-w-[720px]">
+                            It started with a simple question: why does specialty coffee have to be so complicated? We founded Bean &amp; Brew to strip away the snobbery and focus on what matters—great taste and good company.
+                        </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col gap-4 group">
+                <div class="w-full aspect-[4/3] overflow-hidden rounded-lg bg-gray-200">
+                <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A small home coffee roasting machine in a garage setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdPAy6h89BH4DtCyX3_26sHpC6GLjkWn_u1mOncSppsTRRRjKx3Y4C6ZVDxvSd-98CGjaQ1qOryoiK3oFvRq3E3b9yUnr9RHY1qhPpAwY0OJNOCkyxqzQ66bifhnFOI5XwvO5UbOqz5_mtDSm9VR0ztK_9S2D08wTXVIuY8jJT0bFCo4IBpJMDz_oSgKX2pAhZkOPGTJ3fb-osOU1briUpdXHdtze_wSbLWsbJsR-a7TYhRD7RPujKfugo3Ws3QLcEfyThSBiyAw");'></div>
+                </div>
+                <div>
+                        <h4 class="text-[#1b140d] dark:text-white text-xl font-bold mb-2">The Beginning</h4>
+                        <p class="text-[#1b140d]/70 dark:text-[#f3ede7]/70 text-sm">Started in a small garage with a 1kg roaster and a dream to make coffee accessible.</p>
+                </div>
+                </div>
+                <div class="flex flex-col gap-4 group">
+                <div class="w-full aspect-[4/3] overflow-hidden rounded-lg bg-gray-200">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Hands holding raw green coffee beans inspecting quality" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyCRRREWzKgeykzQq17oB-NBTNNlLa0xWoXKP-kidCKSOyd-h6DOoAjzyyIAcfUAb5Q6K-_jF4br6khNmACLHN75NvV2xV2HCxsCxncszFzgQDuQGTN1YkXcqPqsvHu0ZJ7mLwziOPQlr6erxdGyJaV0qsvm3lK_Bn2GdWxI_uh0yTBW7Adx4itP0NmCIQwRqt6TcelJEGDto7y4Zw9qXD8mgCR_lAHV0YoLp7nbTtw1JaJSFYb1cA-Em9-GjC18qMVBTYJHaZZg");'></div>
+                </div>
+                <div>
+                        <h4 class="text-[#1b140d] dark:text-white text-xl font-bold mb-2">The Roasting</h4>
+                        <p class="text-[#1b140d]/70 dark:text-[#f3ede7]/70 text-sm">Small batch roasting ensures we highlight the unique character of every single bean.</p>
+                    </div>
+                    </div>
+                    <div class="flex flex-col gap-4 group">
+                    <div class="w-full aspect-[4/3] overflow-hidden rounded-lg bg-gray-200">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Interior of a modern coffee shop with people talking and drinking coffee" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNKWdD_wjEz54ujOLcoMSE2ejq3VHgo6DV4ncGmeXFzquZ7Jterx9EEz3gWWRydiSG1u43FSRnFUWqQIRVAqkbUnismA3X3kaNUxRaw701z5OQ9C3M8zmQtH3l_9XzpnngroEKXm9QbGvqs7CKHE0hk4xpUdi3ZLxoffqburlydkQZDTu2YQlnNRjTHhOc-RqNOD-BlH6gsaF-beCHE6j1-Zvn3vDvybb8qu-QBrCVLYJ4aQcbMKRbcP4cxcm_6sf1mP6btO48aA");'></div>
+                </div>
+                <div>
+                        <h4 class="text-[#1b140d] dark:text-white text-xl font-bold mb-2">The Shop</h4>
+                        <p class="text-[#1b140d]/70 dark:text-[#f3ede7]/70 text-sm">A space designed for comfort, conversation, and community. Everyone is welcome.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+        </section>
+    <!-- Values Section -->
+        <section class="w-full bg-[#fcfaf8] dark:bg-[#2a2018] py-20">
+                <div class="mx-auto max-w-[960px] px-4 md:px-10">
+                <div class="flex flex-col items-center gap-12">
+                <div class="flex flex-col gap-4 text-center max-w-[700px]">
+                            <h2 class="text-[#1b140d] dark:text-white text-3xl font-bold leading-tight md:text-4xl">
+                                Our Values
+                            </h2>
+                            <p class="text-[#1b140d]/80 dark:text-[#f3ede7]/80 text-lg">
+                                We believe coffee should be ethical, delicious, and most importantly, fun. Here is what we stand for.
+                            </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+    <!-- Value 1 -->
+                <div class="flex flex-col gap-6 rounded-xl border border-[#e7dbcf] dark:border-white/10 bg-white dark:bg-[#221910] p-8 transition-shadow hover:shadow-lg">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <span class="material-symbols-outlined text-[28px]">sentiment_satisfied</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                        <h3 class="text-[#1b140d] dark:text-white text-xl font-bold">Approachability</h3>
+                        <p class="text-[#1b140d]/70 dark:text-[#f3ede7]/60 leading-relaxed">No coffee snobs here. We love answering questions and helping you explore flavors.</p>
+                </div>
+                </div>
+    <!-- Value 2 -->
+                <div class="flex flex-col gap-6 rounded-xl border border-[#e7dbcf] dark:border-white/10 bg-white dark:bg-[#221910] p-8 transition-shadow hover:shadow-lg">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <span class="material-symbols-outlined text-[28px]">handshake</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                        <h3 class="text-[#1b140d] dark:text-white text-xl font-bold">Ethical Sourcing</h3>
+                <p class="text-[#1b140d]/70 dark:text-[#f3ede7]/60 leading-relaxed">We pay farmers above fair trade prices to ensure sustainable livelihoods for our partners.</p>
+                </div>
+                </div>
+    <!-- Value 3 -->
+                <div class="flex flex-col gap-6 rounded-xl border border-[#e7dbcf] dark:border-white/10 bg-white dark:bg-[#221910] p-8 transition-shadow hover:shadow-lg">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <span class="material-symbols-outlined text-[28px]">school</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                        <h3 class="text-[#1b140d] dark:text-white text-xl font-bold">Education First</h3>
+                        <p class="text-[#1b140d]/70 dark:text-[#f3ede7]/60 leading-relaxed">We host weekly workshops to help you master brewing at home. Knowledge is for sharing.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    <!-- Team Section -->
+        <section class="w-full max-w-[960px] px-4 py-20 md:px-10">
+                <div class="flex flex-col gap-10">
+                        <h2 class="text-[#1b140d] dark:text-white text-3xl font-bold leading-tight md:text-4xl text-center md:text-left">Meet Your Baristas</h2>
+                <div class="flex flex-col gap-6">
+    <!-- Founder Card -->
+                <div class="flex flex-col md:flex-row gap-6 items-center bg-white dark:bg-[#221910] p-6 rounded-2xl border border-[#e7dbcf] dark:border-white/10 shadow-sm">
+                <div class="shrink-0">
+                <div class="h-32 w-32 rounded-full bg-cover bg-center border-4 border-primary/20" data-alt="Portrait of Jamie and Alex, the founders, smiling in aprons" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1reDxoWkMEDflGeYblKYMxK-5-lJlv0bmdOFBFCFYSYeEPj_SI0WOwyyNr6dLklpCtvvuwHLW6iTTvYeEtXe73Ei7dW3HegoM5RNetwyYPOJqRUp3j9PFUxaBZmfa4LkrnnazB4a0MWJhSIOkzz4P9qNuBsJNCn4fAVWpDSR018W3ckGXk4OUS65EXGwvhC0wMB7pq-SS0FQ8Ad1FbuRpmhi7xpvoH-rrGWZn_KJIh8-orx-S0hY2rb2CNAESDYuFNoZaJnQeJQ");'></div>
+                </div>
+                <div class="flex flex-col gap-2 text-center md:text-left flex-1">
+                <div class="flex flex-col md:flex-row md:items-center gap-2 justify-between">
+                        <h3 class="text-[#1b140d] dark:text-white text-2xl font-bold">Jamie &amp; Alex</h3>
+                        <span class="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary w-fit mx-auto md:mx-0">Founders</span>
+                </div>
+                                <p class="text-[#1b140d]/80 dark:text-[#f3ede7]/80 text-base italic">
+                                    "We started this journey 5 years ago because we couldn't find a place that served great coffee without the attitude."
+                                </p>
+            <div class="mt-2 flex flex-wrap gap-4 justify-center md:justify-start text-sm text-[#1b140d]/60 dark:text-[#f3ede7]/60">
+                        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">local_cafe</span> Favorite: Classic Cappuccino</span>
+                        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">schedule</span> Since 2019</span>
+            </div>
+            </div>
+            </div>
+    <!-- Staff Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+    <!-- Staff 1 -->
+            <div class="flex items-center gap-4 bg-transparent p-4 rounded-xl border border-[#e7dbcf] dark:border-white/5 hover:bg-white dark:hover:bg-[#2a2018] transition-colors">
+            <div class="h-16 w-16 rounded-full bg-cover bg-center shrink-0" data-alt="Portrait of Sarah, head roaster" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBte3xiM_DbEx8oPa_zn9OaObMjdEvUSF43ycqIztAgGOgwA2nLYZ7N_1VsBo5vX-9gQy_5s_U0VSl-h4ygdy0dDyXClM-AB3m8vbWpW9uU9xjyzkdesUBVDpjMb6orhR0j_9aRhJdsMizr7x9kBxcm8t3z4Oqhkvv5QnIS_8rCqYaYwUTG_XRXLR_XOjfx5cSbBga07OF6jZ4a7yEytG3ZsH5X6GJtmGHo_OYix4yw3rUam2bceIlDD8ZhUMXhNt8V9J25EesyUA");'></div>
+            <div>
+                        <h4 class="text-[#1b140d] dark:text-white font-bold text-lg">Sarah K.</h4>
+                        <p class="text-primary text-sm font-medium">Head Roaster</p>
+                        <p class="text-xs text-[#1b140d]/50 dark:text-[#f3ede7]/50 mt-1">Loves: Pour-over Ethiopia</p>
+            </div>
+            </div>
+    <!-- Staff 2 -->
+            <div class="flex items-center gap-4 bg-transparent p-4 rounded-xl border border-[#e7dbcf] dark:border-white/5 hover:bg-white dark:hover:bg-[#2a2018] transition-colors">
+            <div class="h-16 w-16 rounded-full bg-cover bg-center shrink-0" data-alt="Portrait of Mike, lead barista" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWuXUnk1zgNfHzHzkWp1s4ieZtxZFSO7_d-3K6wn3QFkSmZUkN66BBz7CdhlJxPXYZKdaLCt50b49A7swHOiUWCK0_0y2R-GZeF3EKemOU1dluqVrjKBAq1Gtsv13U-p5R4BHb9KvFoLnge5zux8x2y20JUbtPzjRBRBM8PMct9-P8vDCgVIDhGPz0z0hwLs-EFMM6je5ZQApzLC1S0HTQwUzk6grVO9t8sh02RairCRfbDmkAeOAoh9BhEeIaVkRDfyReJD0FeQ");'></div>
+            <div>
+                        <h4 class="text-[#1b140d] dark:text-white font-bold text-lg">Mike T.</h4>
+                        <p class="text-primary text-sm font-medium">Lead Barista</p>
+                        <p class="text-xs text-[#1b140d]/50 dark:text-[#f3ede7]/50 mt-1">Loves: Iced Oat Latte</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+    <!-- CTA Section -->
+            <section class="w-full bg-primary py-16 text-center px-4">
+            <div class="flex flex-col items-center gap-6 max-w-[600px] mx-auto">
+                        <h2 class="text-[#fcfaf8] text-3xl font-bold leading-tight md:text-4xl">Ready to taste the difference?</h2>
+                        <p class="text-[#fcfaf8]/90 text-lg">Stop by the shop for a chat, or order our beginner's tasting kit online.</p>
+            <div class="flex gap-4 flex-col sm:flex-row w-full justify-center">
+                        <button class="cursor-pointer rounded-lg bg-[#fcfaf8] px-8 py-3 text-primary text-base font-bold shadow-md hover:bg-white transition-colors">
+                            Find Our Location
+                        </button>
+                        <button class="cursor-pointer rounded-lg bg-[#b05d0d] px-8 py-3 text-[#fcfaf8] text-base font-bold shadow-md hover:bg-[#9a510b] transition-colors">
+                            Shop Beans Online
+                        </button>
+            </div>
+            </div>
+            </section>
+            </main>
+            <footer class="flex flex-col border-t border-[#e7dbcf] dark:border-white/10 bg-background-light dark:bg-background-dark py-12 px-10">
+                <div class="flex flex-col md:flex-row justify-between gap-10 max-w-[1200px] w-full mx-auto">
+                <div class="flex flex-col gap-4 max-w-xs">
+                <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined text-[24px]">coffee</span>
+                        <h2 class="text-[#1b140d] dark:text-white font-bold text-xl">Bean &amp; Brew</h2>
+                </div>
+                    <p class="text-[#1b140d]/70 dark:text-[#f3ede7]/70 text-sm leading-relaxed">
+                        Making specialty coffee accessible, one cup at a time. Join us in our journey of flavor and friendship.
+                    </p>
+            </div>
+            <div class="flex flex-wrap gap-12">
+<div class="flex flex-col gap-4">
+<h4 class="text-[#1b140d] dark:text-white font-bold text-base">Company</h4>
+<a class="text-[#1b140d]/70 dark:text-[#f3ede7]/70 text-sm hover:text-primary transition-colors" href="#">Our Story</a>
+<a class="text-[#1b140d]/70 dark:text-[#f3ede7]/70 text-sm hover:text-primary transition-colors" href="#">Careers</a>
+<a class="text-[#1b140d]/70 dark:text-[#f3ede7]/70 text-sm hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-[#1b140d] dark:text-white font-bold text-base">Visit Us</h4>
+<p class="text-[#1b140d]/70 dark:text-[#f3ede7]/70 text-sm">123 Brew Street<br/>Coffee City, CA 90210</p>
+<p class="text-[#1b140d]/70 dark:text-[#f3ede7]/70 text-sm">Mon-Fri: 7am - 7pm<br/>Sat-Sun: 8am - 6pm</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-[#1b140d] dark:text-white font-bold text-base">Follow Us</h4>
+<div class="flex gap-4">
+<a class="text-[#1b140d]/60 dark:text-[#f3ede7]/60 hover:text-primary transition-colors" href="#"><span class="sr-only">Instagram</span>📷</a>
+<a class="text-[#1b140d]/60 dark:text-[#f3ede7]/60 hover:text-primary transition-colors" href="#"><span class="sr-only">Twitter</span>🐦</a>
+<a class="text-[#1b140d]/60 dark:text-[#f3ede7]/60 hover:text-primary transition-colors" href="#"><span class="sr-only">Facebook</span>📘</a>
+</div>
+</div>
+            </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-[#e7dbcf] dark:border-white/10 text-center text-[#1b140d]/40 dark:text-[#f3ede7]/40 text-sm">
+                © 2024 Bean &amp; Brew Coffee Co. All rights reserved.
+            </div>
+</footer>
+</div>
+</body>
+</html>

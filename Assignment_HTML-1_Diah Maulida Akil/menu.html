@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Menu - Bean &amp; Brew</title>
+  <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#B87C4C",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["'Be Vietnam Pro'", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg":  
+                        "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+        
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#1b140d] dark:text-[#f3ede7] 
+font-display min-h-screen flex flex-col overflow-x-hidden">
+
+  <!-- Navigation-->
+  <header class="w-full bg-background-light dark:bg-background-dark border-b border-[#f3ede7] dark:border-[#3a2d20] sticky top-0 z-50">
+    <div class="px-4 md:px-10 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-8">
+      <div class="flex items-center gap-4 text-[#1b140d] dark:text-white">
+      <div class="size-8 text-primary">
+      <svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 
+      39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 
+      16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+      <path clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 
+      12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 
+      16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 
+      12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 
+      12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 
+      10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 
+      41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 
+      15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 
+      13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 
+      6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 
+      15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 
+      19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z" fill="currentColor" fill-rule="evenodd"></path>
+      </svg>
+      </div>
+          <h2 class="text-lg font-bold leading-tight 
+            tracking-[-0.015em]">Bean &amp; Brew</h2>
+      </div>
+              <div class="hidden lg:flex items-center gap-9">
+                  <a class="text-[#1b140d] dark:text-[#f3ede7] text-sm font-medium hover:text-primary transition-colors" 
+                   href="index.html">Home</a>
+                  <a class="text-[#1b140d] dark:text-[#f3ede7] text-sm font-medium hover:text-primary transition-colors" 
+                    href="story.html">Our story</a>
+                  <a class="text-primary text-sm font-bold" 
+                    href="menu.html">Menu</a>
+                  <a class="text-[#1b140d] dark:text-[#f3ede7] text-sm font-medium hover:text-primary transition-colors" 
+                    href="contact.html">Contact</a>
+             </div>
+      </div>
+          
+              <div class="flex items-center gap-4 lg:gap-8">
+                  <label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-lg h-full ring-1 ring-[#e7dbcf] dark:ring-[#3a2d20] focus-within:ring-2 focus-within:ring-primary transition-all">
+              <div class="text-[#9a734c] flex bg-transparent items-center justify-center pl-4 rounded-l-lg">
+                  <span class="material-symbols-outlined text-[20px]">search</span>
+              </div>
+                  <input class="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg bg-transparent text-[#1b140d] dark:text-white focus:outline-0 h-full placeholder:text-[#9a734c] px-4 rounded-l-none pl-2 text-sm font-normal" placeholder="Search menu..." value=""/>
+              </div>
+                  </label>
+
+                  <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-opacity-90 transition-opacity text-white text-sm font-bold shadow-md">
+                  <span class="truncate">Order Online</span>
+                  </button>
+              </div>
+              </div>
+    </header>
+
+  <!-- Menu Section -->
+   <main class="flex-1 flex flex-col items-center">
+    <div class="w-full max-w-screen-2xl px-4 md:px-10 py-6 md:py-10">
+    <div class="relative w-full min-h-[400px] md:min-h-[480px] rounded-xl overflow-hidden flex flex-col items-center justify-center text-center p-8 bg-cover bg-center" data-alt="Close up of espresso coffee being poured into a cup" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), 
+    url("https://lh3.googleusercontent.com/aida-public/AB6AXuDaZmpe7X12MrKY_IjjP31KEynK5WPI6y7mmub5DS_oni95u1MI_IH-8uRvQFN_FUiL_ZE1ow3c_atBpNcKqs8JQ5OUxs8LWfbOUgg5UFGdl8X-QR7ZO-3FHr8YG07H7efx0a4UeAhZVxCRON_PSawgCV2sJkllanGA3lhW3gXghnl1mLB-AaTDZUb7AcirP7KWTwZUeoss2SHNBSxggnLOlUlpWm2d2ozWZEmdNiqNStoY_HgXpQ7UY8Xiyqd6Y9V5mjqv97zYHg");'>>
+    <div class="flex flex-col gap-4 max-w-2xl animate-fade-in-up">
+      <h2 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight drop-shadow-sm">
+        Our Menu</h2>
+      <p class="text-white/90 text-base md:text-xl font-medium leading-relaxed max-w-xl mx-auto">
+        Choose your favorite drink and customize it your way.</p>
+
+      <div class="mt-4 flex gap-4 justify-center">
+        <button class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-[#b8610d] transition-colors shadow-lg">
+                            View Specials
+                         </button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+        <!-- ITEM -->
+        <div class="w-full max-w-[960px] px-4 sticky top-[72px] z-40 bg-background-light dark:bg-background-dark pt-4">
+        <div class="border-b border-[#e7dbcf] dark:border-[#3a2d20] overflow-x-auto no-scrollbar">
+        <div class="flex gap-8 min-w-max px-2">
+          <a class="group flex flex-col items-center justify-center pb-3 border-b-[3px] border-b-primary" href="#">
+            <p class="text-primary text-sm md:text-base font-bold tracking-wide">All Items</p>
+          </a>
+
+        <a class="group flex flex-col items-center justify-center pb-3 border-b-[3px] border-b-transparent hover:border-b-primary/50 transition-all" href="#">
+          <p class="text-[#9a734c] group-hover:text-primary transition-colors text-sm md:text-base font-bold tracking-wide">Signatures</p>
+        </a>
+
+        <a class="group flex flex-col items-center justify-center pb-3 border-b-[3px] border-b-transparent hover:border-b-primary/50 transition-all" href="#">
+          <p class="text-[#9a734c] group-hover:text-primary transition-colors text-sm md:text-base font-bold tracking-wide">Hot Coffee</p>
+        </a>
+
+        <a class="group flex flex-col items-center justify-center pb-3 border-b-[3px] border-b-transparent hover:border-b-primary/50 transition-all" href="#">
+          <p class="text-[#9a734c] group-hover:text-primary transition-colors text-sm md:text-base font-bold tracking-wide">Cold Brews</p>
+        </a>
+
+        <a class="group flex flex-col items-center justify-center pb-3 border-b-[3px] border-b-transparent hover:border-b-primary/50 transition-all" href="#">
+          <p class="text-[#9a734c] group-hover:text-primary transition-colors text-sm md:text-base font-bold tracking-wide">Pastries</p>
+      </a>
+      </div> 
+    </div> 
+  </div>
+          <!-- Menu Content -->
+          <div class="w-full max-w-[960px] px-4 py-8 flex flex-col gap-12 pb-20">
+          <!-- Section: Signatures -->
+          <section>
+          <div class="flex items-center justify-between mb-6">
+          <h2 class="text-[#1b140d] dark:text-white text-2xl font-bold tracking-tight">Signatures</h2>
+          <span class="h-[1px] flex-1 bg-[#e7dbcf] dark:bg-[#3a2d20] ml-4"></span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div class="group flex flex-col rounded-xl bg-white dark:bg-[#2c2219] shadow-sm hover:shadow-lg hover:shadow-primary/10 transition-all border border-[#f3ede7] dark:border-[#3a2d20] overflow-hidden">
+          <div class="relative h-48 w-full overflow-hidden">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Glass of caramel macchiato with caramel drizzle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBM6Q3PZkwJoGzmmxcNJFqW8OTIlGcsQebOojzTKQxjcYzLoRD8ub5DjmnCC3uwO4Bmbx7JoaxdkPWBFQBntO1ff6LGEVoxqsok65UpFnJDvJZ3Gv4gCNwYNjIgZpJqaeeR6tzxy_yBy3F7yS72TY9i2Xxi1uN9xKhx-rlgQdVCNFLG2do7wzI-Svl5IZ5zbpyF_82cYnvDLPH18lUvfDm7H_bitiHrAMDy6hxsFGdF_j2Kmv4BU3L2zjSr2NIGzP3OkHcaZddPpA");'></div>
+          <div class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">Bestseller</div>
+          </div>
+          <div class="p-5 flex flex-col flex-1">
+          <div class="flex justify-between items-start mb-2">
+          <h3 class="text-lg font-bold text-[#1b140d] dark:text-white group-hover:text-primary transition-colors">Caramel Macchiato</h3>
+          <span class="text-primary font-bold text-lg">$5.50</span>
+          </div>
+          <p class="text-[#9a734c] text-sm leading-relaxed mb-4 flex-1">
+                                Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle.
+                            </p>
+          <div class="flex items-center justify-between mt-auto">
+          <div class="flex gap-1 text-[#9a734c] dark:text-[#be9b7b] text-xs font-medium bg-[#f3ede7] dark:bg-[#3a2d20] px-2 py-1 rounded">
+          <span class="material-symbols-outlined text-[14px]">coffee</span> Medium Roast
+                                </div>
+          <button class="flex items-center justify-center rounded-lg h-9 px-4 bg-primary/10 text-primary hover:bg-primary hover:text-white text-sm font-bold transition-all">
+                                    Add to Order
+                                </button>
+    </div>
+    </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group flex flex-col rounded-xl bg-white dark:bg-[#2c2219] shadow-sm hover:shadow-lg hover:shadow-primary/10 transition-all border border-[#f3ede7] dark:border-[#3a2d20] overflow-hidden">
+      <div class="relative h-48 w-full overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Latte art in a ceramic cup on a wooden table" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBbHGH0BNlZMrsCfInNiNV5nUQ_mqw01MtF7sc0nRh6euwTNWAI2wgkMmhwWGWiV9iE33Z2f-0Um_nDMSzGQThAjIUCufqv5wrBJKa2XKyBng11FtsCLZchVe2mm2NNuNz1h_w0Wc9KU1iOHvr1hQgBwHNPf17OaOW0QS7GWRm1pb6EaSyDpg3qNTIdweW_nTcNs4hHzDIgW8X4YdKnkcHtskE1FWJfrpTuKobfJk6rIF8PxwmRxNWSi5vHIxZnurauQbP80ieqw");'></div>
+      <div class="absolute top-3 left-3 bg-[#eab308] text-white text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">New</div>
+      </div>
+      <div class="p-5 flex flex-col flex-1">
+      <div class="flex justify-between items-start mb-2">
+          <h3 class="text-lg font-bold text-[#1b140d] dark:text-white group-hover:text-primary transition-colors">Hazelnut Latte</h3>
+          <span class="text-primary font-bold text-lg">$4.50</span>
+      </div>
+          <p class="text-[#9a734c] text-sm leading-relaxed mb-4 flex-1">
+                                Smooth espresso with steamed milk and roasted hazelnut syrup. A nutty delight.
+                            </p>
+          <div class="flex items-center justify-between mt-auto">
+          <div class="flex gap-1 text-[#9a734c] dark:text-[#be9b7b] text-xs font-medium bg-[#f3ede7] dark:bg-[#3a2d20] px-2 py-1 rounded">
+          <span class="material-symbols-outlined text-[14px]">local_fire_department</span> Hot
+                                </div>
+          <button class="flex items-center justify-center rounded-lg h-9 px-4 bg-primary/10 text-primary hover:bg-primary hover:text-white text-sm font-bold transition-all">
+                                    Add to Order
+                                </button>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+
+      <!-- Section: Cold Brews -->
+        <section>
+        <div class="flex items-center justify-between mb-6">
+        <h2 class="text-[#1b140d] dark:text-white text-2xl font-bold tracking-tight">Cold Brews</h2>
+            <span class="h-[1px] flex-1 bg-[#e7dbcf] dark:bg-[#3a2d20] ml-4"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 3 -->
+        <div class="group flex flex-col rounded-xl bg-white dark:bg-[#2c2219] shadow-sm hover:shadow-lg hover:shadow-primary/10 transition-all border border-[#f3ede7] dark:border-[#3a2d20] overflow-hidden">
+        <div class="relative h-40 w-full overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Iced coffee in a tall glass with milk swirl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3KROHI_RLaz6602yYyAQbhi-u6qU4ZcMP80rOqGm5qZ57RevWfy9VcyEM6Xt4uhmjMLR_i7nX3dDWPu0sVEWekg9Y0Zf5STPAJmU6iVfJB8_nlTqGeLdCO0K2uINY9lgxsd-QIdJSrLWa83VIn-f2UDhn3Aygg-ijKhj_YnX6O1NkGyQo_y5UKncT17I1mrH-SSBQhb4rBc9_UUibK3udBXcP45F8prUGEbAiXB4GvJTbWhpJILafxVz5-zXZauc_kF1Pllh3LQ");'></div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+        <div class="flex justify-between items-start mb-2">
+              <h3 class="text-base font-bold text-[#1b140d] dark:text-white group-hover:text-primary transition-colors">Classic Cold Brew</h3>
+              <span class="text-primary font-bold text-base">$4.25</span>
+        </div>
+              <p class="text-[#9a734c] text-sm leading-relaxed mb-4 flex-1 line-clamp-2">
+                                Slow-steeped for 20 hours for a super smooth, full-bodied flavor without acidity.
+                            </p>
+          <button class="w-full flex items-center justify-center rounded-lg h-9 bg-primary/10 text-primary hover:bg-primary hover:text-white text-sm font-bold transition-all">
+                                Add to Order
+                            </button>
+</div>
+</div>
+        <!-- Card 4 -->
+        <div class="group flex flex-col rounded-xl bg-white dark:bg-[#2c2219] shadow-sm hover:shadow-lg hover:shadow-primary/10 transition-all border border-[#f3ede7] dark:border-[#3a2d20] overflow-hidden">
+        <div class="relative h-40 w-full overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Iced latte with coffee beans in background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCErpEO1BtVgrbmI5JgCWaROJrXxcw8SZqa3uPKTsMPLSedvP5VPc90owji3E7pvuMr0KHRCryi0Y_CtkDmp84NJE-yFvTIO7oDAPLdt2aNSS9hsBpYvk4BPr-WF8rxFhYMmnicRZUEkh7xxkLq_MRLZYyNZvO-valco098cSZOHKOmmQVPIyNzPABkl82SJJl61G5NQhODFq3NsZlmefI5eT7KCxEKTIroJc0uKHGc_GJn7df4Lux8lrNltroBIPZC_458eMOCrg");'></div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+        <div class="flex justify-between items-start mb-2">
+              <h3 class="text-base font-bold text-[#1b140d] dark:text-white group-hover:text-primary transition-colors">Vanilla Sweet Cream</h3>
+              <span class="text-primary font-bold text-base">$4.95</span>
+          </div>
+              <p class="text-[#9a734c] text-sm leading-relaxed mb-4 flex-1 line-clamp-2">
+                                Our signature cold brew topped with a float of house-made vanilla sweet cream.
+                            </p>
+            <button class="w-full flex items-center justify-center rounded-lg h-9 bg-primary/10 text-primary hover:bg-primary hover:text-white text-sm font-bold transition-all">
+                                Add to Order
+                            </button>
+            </div>
+          </div>
+        <!-- Card 5 -->
+        <div class="group flex flex-col rounded-xl bg-white dark:bg-[#2c2219] shadow-sm hover:shadow-lg hover:shadow-primary/10 transition-all border border-[#f3ede7] dark:border-[#3a2d20] overflow-hidden">
+        <div class="relative h-40 w-full overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Iced tea with lemon slice" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBYm2Qn2uIjyHxi0uaZfItdlij0Wu1Q1JI9liOoCOcWiHioeMx4ns-m0SIkzfcVH7HSKs-O_KWW1NkvjptEFF95j2pvoDApgjTp1Ct9ksgGsAERBEkWqoR2Jv4TYbJK_2LL26llz7BhcYnW8sbzhGRjYhRig_Jjs5k0kJJiiuLyFt0FbSOtqoVtnsw-DhIjzJH2b2WsXRvlTepurrIejLFrucKRQrMXQT1QKTmqPea2UUnpWdnc8zq59kRcVqypqiMTS0ErH2AqA");'></div>
+        <div class="absolute top-3 left-3 bg-[#4c9a73] text-white text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">Vegan</div>
+        </div>
+        <div class="p-4 flex flex-col flex-1">
+        <div class="flex justify-between items-start mb-2">
+            <h3 class="text-base font-bold text-[#1b140d] dark:text-white group-hover:text-primary transition-colors">Iced Green Tea</h3>
+            <span class="text-primary font-bold text-base">$3.75</span>
+        </div>
+        <p class="text-[#9a734c] text-sm leading-relaxed mb-4 flex-1 line-clamp-2">
+                                Refreshing premium green tea shaken with ice. Lightly sweetened with liquid cane sugar.
+                            </p>
+            <button class="w-full flex items-center justify-center rounded-lg h-9 bg-primary/10 text-primary hover:bg-primary hover:text-white text-sm font-bold transition-all">
+                                Add to Order
+                            </button>
+        </div>
+        </div>
+        </div>
+        </section>
+  <!-- Footer -->
+          <div class="w-full bg-[#f3ede7] dark:bg-[#2c2219] mt-auto py-12 px-4 border-t border-[#e7dbcf] dark:border-[#3a2d20]">
+          <div class="max-w-[960px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <div class="flex flex-col gap-2 text-center md:text-left">
+                <h3 class="text-xl font-bold text-[#1b140d] dark:text-white">Join the Coffee Club</h3>
+                <p class="text-[#9a734c] dark:text-[#be9b7b] text-sm">Get weekly updates on new beans and exclusive offers.</p>
+          </div>
+          <div class="flex w-full md:w-auto max-w-md gap-2">
+                <input class="flex-1 rounded-lg border-none bg-white dark:bg-[#1b140d] px-4 py-2 text-sm focus:ring-2 focus:ring-primary" placeholder="Enter your email" type="email"/>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-opacity-90">Subscribe</button>
+          </div>
+          </div>
+          </div>
+</main>
+</body>
+</html>
